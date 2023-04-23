@@ -1,22 +1,13 @@
-import { Calendar } from 'react-big-calendar';
-import  'react-big-calendar/lib/css/react-big-calendar.css';
-
-import { CalendarEvent, CalendarModal, FabAddNew, FabDelete, NavBar } from '../';
-import { getMessagesES, localizer } from '../../helpers';
 import { useEffect, useState } from 'react';
-import { useAuthStore, useCalendarStore, useUiStore } from '../../hooks';
+import { Calendar } from 'react-big-calendar';
+import 'react-big-calendar/lib/css/react-big-calendar.css';
 
-// const events = [{
-//   title: 'Cumpleaños del jefe',
-//   notes: 'Hay que comprar el pastel',
-//   start: new Date(),
-//   end: addHours( new Date(), 2 ),
-//   bgColor: '#fafafa',
-//   user: {
-//     _id: '123',
-//     name: 'Engel',
-//   }
-// }]
+import { Navbar, CalendarEvent, CalendarModal, FabAddNew, FabDelete} from '../';
+
+import { localizer, getMessagesES } from '../../helpers';
+import { useUiStore, useCalendarStore, useAuthStore } from '../../hooks';
+
+
 
 export const CalendarPage = () => {
 
@@ -65,7 +56,7 @@ export const CalendarPage = () => {
 
   return (
     <>
-      <NavBar />
+      <Navbar />
 
       <Calendar
         culture='es'
