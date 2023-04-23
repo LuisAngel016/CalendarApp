@@ -4,6 +4,7 @@
 ## Development pasos
 
 1. Renombrar el archivo .env.template por .env
+
 2 .Hacer los camnios respectivos en las variables de entorno
 
 ````
